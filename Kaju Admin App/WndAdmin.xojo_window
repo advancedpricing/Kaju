@@ -96,7 +96,7 @@ Begin Window WndAdmin
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      TabIndex        =   1
+      TabIndex        =   5
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
@@ -127,7 +127,7 @@ Begin Window WndAdmin
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      TabIndex        =   2
+      TabIndex        =   6
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
@@ -147,7 +147,7 @@ Begin Window WndAdmin
       Bold            =   False
       Border          =   True
       CueText         =   ""
-      DataField       =   "Version"
+      DataField       =   "#KajuFile.kVersionName"
       DataSource      =   ""
       Enabled         =   False
       Format          =   ""
@@ -233,7 +233,7 @@ Begin Window WndAdmin
       Scope           =   2
       SmallTabs       =   False
       TabDefinition   =   "Release Notes\rBinaries\rImage"
-      TabIndex        =   14
+      TabIndex        =   4
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
@@ -334,7 +334,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   2
+         TabIndex        =   11
          TabPanelIndex   =   1
          Text            =   "Preview:"
          TextAlign       =   0
@@ -368,7 +368,7 @@ Begin Window WndAdmin
          LockTop         =   True
          Scope           =   2
          State           =   0
-         TabIndex        =   0
+         TabIndex        =   1
          TabPanelIndex   =   2
          TabStop         =   True
          TextFont        =   "System"
@@ -409,7 +409,7 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   False
          Scope           =   2
-         TabIndex        =   2
+         TabIndex        =   3
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
@@ -443,7 +443,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   3
+         TabIndex        =   12
          TabPanelIndex   =   2
          Text            =   "Hash:"
          TextAlign       =   0
@@ -477,7 +477,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   4
+         TabIndex        =   13
          TabPanelIndex   =   2
          Text            =   "URL:"
          TextAlign       =   0
@@ -511,7 +511,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   3
+         TabIndex        =   10
          TabPanelIndex   =   1
          Text            =   "Release Notes (HTML):"
          TextAlign       =   0
@@ -545,7 +545,7 @@ Begin Window WndAdmin
          LockTop         =   True
          Scope           =   2
          State           =   0
-         TabIndex        =   5
+         TabIndex        =   4
          TabPanelIndex   =   2
          TabStop         =   True
          TextFont        =   "System"
@@ -620,7 +620,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   8
+         TabIndex        =   15
          TabPanelIndex   =   2
          Text            =   "Hash:"
          TextAlign       =   0
@@ -654,7 +654,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   9
+         TabIndex        =   16
          TabPanelIndex   =   2
          Text            =   "URL:"
          TextAlign       =   0
@@ -688,7 +688,7 @@ Begin Window WndAdmin
          LockTop         =   True
          Scope           =   2
          State           =   0
-         TabIndex        =   10
+         TabIndex        =   8
          TabPanelIndex   =   2
          TabStop         =   True
          TextFont        =   "System"
@@ -720,7 +720,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   13
+         TabIndex        =   18
          TabPanelIndex   =   2
          Text            =   "Hash:"
          TextAlign       =   0
@@ -754,7 +754,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   14
+         TabIndex        =   19
          TabPanelIndex   =   2
          Text            =   "URL:"
          TextAlign       =   0
@@ -797,7 +797,7 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   False
          Scope           =   2
-         TabIndex        =   0
+         TabIndex        =   1
          TabPanelIndex   =   3
          TabStop         =   True
          Text            =   ""
@@ -831,7 +831,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   1
+         TabIndex        =   3
          TabPanelIndex   =   3
          Text            =   "URL:"
          TextAlign       =   0
@@ -865,7 +865,7 @@ Begin Window WndAdmin
          LockTop         =   True
          Scope           =   2
          State           =   0
-         TabIndex        =   2
+         TabIndex        =   0
          TabPanelIndex   =   3
          TabStop         =   True
          TextFont        =   "System"
@@ -892,7 +892,7 @@ Begin Window WndAdmin
          LockTop         =   True
          Renderer        =   0
          Scope           =   2
-         TabIndex        =   3
+         TabIndex        =   2
          TabPanelIndex   =   3
          TabStop         =   True
          Top             =   224
@@ -928,7 +928,7 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   False
          Scope           =   2
-         TabIndex        =   15
+         TabIndex        =   0
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
@@ -962,7 +962,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   16
+         TabIndex        =   20
          TabPanelIndex   =   2
          Text            =   "Minimum Required Version:"
          TextAlign       =   0
@@ -1007,7 +1007,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   4
+         TabIndex        =   7
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1051,7 +1051,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   5
+         TabIndex        =   8
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1095,7 +1095,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   6
+         TabIndex        =   9
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1139,7 +1139,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   7
+         TabIndex        =   2
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1183,7 +1183,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   8
+         TabIndex        =   3
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1225,9 +1225,9 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   True
          Scope           =   2
-         TabIndex        =   1
+         TabIndex        =   22
          TabPanelIndex   =   2
-         TabStop         =   True
+         TabStop         =   False
          Text            =   ""
          TextColor       =   &c00000000
          TextFont        =   "System"
@@ -1268,9 +1268,9 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   True
          Scope           =   2
-         TabIndex        =   6
+         TabIndex        =   23
          TabPanelIndex   =   2
-         TabStop         =   True
+         TabStop         =   False
          Text            =   ""
          TextColor       =   &c00000000
          TextFont        =   "System"
@@ -1311,7 +1311,7 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   False
          Scope           =   2
-         TabIndex        =   12
+         TabIndex        =   11
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
@@ -1354,7 +1354,7 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   False
          Scope           =   2
-         TabIndex        =   17
+         TabIndex        =   5
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
@@ -1388,7 +1388,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   18
+         TabIndex        =   14
          TabPanelIndex   =   2
          Text            =   "Executable:"
          TextAlign       =   0
@@ -1431,7 +1431,7 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   False
          Scope           =   2
-         TabIndex        =   19
+         TabIndex        =   9
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
@@ -1465,7 +1465,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   20
+         TabIndex        =   17
          TabPanelIndex   =   2
          Text            =   "Executable:"
          TextAlign       =   0
@@ -1508,9 +1508,9 @@ Begin Window WndAdmin
          Password        =   False
          ReadOnly        =   True
          Scope           =   2
-         TabIndex        =   11
+         TabIndex        =   24
          TabPanelIndex   =   2
-         TabStop         =   True
+         TabStop         =   False
          Text            =   ""
          TextColor       =   &c00000000
          TextFont        =   "System"
@@ -1553,7 +1553,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   9
+         TabIndex        =   4
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1597,7 +1597,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   10
+         TabIndex        =   5
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1641,7 +1641,7 @@ Begin Window WndAdmin
          LockTop         =   True
          MenuValue       =   0
          Scope           =   0
-         TabIndex        =   11
+         TabIndex        =   6
          TabPanelIndex   =   1
          TabStop         =   True
          TextColor       =   &c00000000
@@ -1674,7 +1674,7 @@ Begin Window WndAdmin
          LockRight       =   True
          LockTop         =   True
          Scope           =   2
-         TabIndex        =   21
+         TabIndex        =   2
          TabPanelIndex   =   2
          TabStop         =   True
          TextFont        =   "SmallSystem"
@@ -1705,7 +1705,7 @@ Begin Window WndAdmin
          LockRight       =   True
          LockTop         =   True
          Scope           =   2
-         TabIndex        =   23
+         TabIndex        =   10
          TabPanelIndex   =   2
          TabStop         =   True
          TextFont        =   "SmallSystem"
@@ -1736,7 +1736,7 @@ Begin Window WndAdmin
          LockRight       =   True
          LockTop         =   True
          Scope           =   2
-         TabIndex        =   24
+         TabIndex        =   6
          TabPanelIndex   =   2
          TabStop         =   True
          TextFont        =   "SmallSystem"
@@ -1767,7 +1767,7 @@ Begin Window WndAdmin
          Multiline       =   False
          Scope           =   2
          Selectable      =   False
-         TabIndex        =   25
+         TabIndex        =   21
          TabPanelIndex   =   2
          Text            =   "Use ‘$VERSION$’ in the URL to insert the version on export"
          TextAlign       =   1
@@ -1810,7 +1810,7 @@ Begin Window WndAdmin
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
-      TabIndex        =   4
+      TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   ""
@@ -1878,7 +1878,7 @@ Begin Window WndAdmin
       LockTop         =   True
       Scope           =   2
       State           =   0
-      TabIndex        =   5
+      TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
@@ -1917,7 +1917,7 @@ Begin Window WndAdmin
       LockTop         =   True
       Renderer        =   0
       Scope           =   2
-      TabIndex        =   7
+      TabIndex        =   15
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   156
@@ -1988,7 +1988,7 @@ Begin Window WndAdmin
       Multiline       =   False
       Scope           =   2
       Selectable      =   False
-      TabIndex        =   6
+      TabIndex        =   14
       TabPanelIndex   =   0
       Text            =   "None"
       TextAlign       =   0
@@ -2087,7 +2087,7 @@ Begin Window WndAdmin
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      TabIndex        =   15
+      TabIndex        =   7
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "SmallSystem"
@@ -2129,7 +2129,7 @@ Begin Window WndAdmin
       LockTop         =   False
       MenuValue       =   -1
       Scope           =   0
-      TabIndex        =   16
+      TabIndex        =   9
       TabPanelIndex   =   0
       TabStop         =   True
       TextColor       =   &c00000000
@@ -2424,29 +2424,30 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
-		Private Sub CreateRSAKeys()
-		  if RSAPrivateKey = "" then
-		    if not Crypto.RSAGenerateKeyPair( 2048, RSAPrivateKey, RSAPublicKey ) then
-		      MsgBox "Could not create RSA key pairs."
-		      self.Close
-		    else
-		      self.ContentsChanged = true
-		    end if
-		  end if
-		  
-		  return
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h21
 		Private Sub DeleteVersion()
 		  dim curIndex as integer = lbVersions.ListIndex
 		  if curIndex = -1 then
 		    return
 		  end if
 		  
+		  StoreFieldsToVersionRow
+		  
+		  dim version as Kaju.UpdateInformation = lbVersions.RowTag( curIndex )
+		  
+		  dim dlg as new MessageDialog
+		  dlg.Message = "Really delete version " + version.Version + "?"
+		  dlg.Explanation = "This cannot be undone."
+		  dlg.ActionButton.Caption = "&Delete"
+		  dlg.CancelButton.Visible = true
+		  dim btn as MessageDialogButton = dlg.ShowModalWithin( self )
+		  if btn is dlg.CancelButton then
+		    return
+		  end if
+		  
 		  lbVersions.ListIndex = -1
 		  lbVersions.RemoveRow( curIndex )
+		  
+		  MyKajuFile.KajuData.Remove MyKajuFile.KajuData.IndexOf( version )
 		  
 		  if curIndex > 0 then
 		    curIndex = curIndex - 1
@@ -2455,53 +2456,34 @@ End
 		  if curIndex < lbVersions.ListCount then
 		    lbVersions.ListIndex = curIndex
 		  end if
+		  
+		  ContentsChanged = true
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
 		Private Function DoSave() As Boolean
+		  StoreFieldsToVersionRow()
+		  
 		  dim f as FolderItem = Document
 		  if f is nil then
 		    return DoSaveAs()
 		  end if
 		  
-		  dim r as boolean
 		  dim savedContentsChanged as boolean = self.ContentsChanged
 		  
-		  dim master as new JSONItem
-		  master.Compact = false
+		  dim r as boolean
+		  MyKajuFile.SaveTo( f )
+		  r = true
+		  ContentsChanged = false
 		  
-		  master.Value( kPrivateKeyName ) = RSAPrivateKey
-		  master.Value( kPublicKeyName ) = RSAPublicKey
-		  
-		  dim data as JSONItem = KajuJSON
-		  master.Value( kDataName ) = data
-		  
-		  dim toSave as string = master.ToString
-		  
-		  dim bs as BinaryStream = BinaryStream.Create( f, true )
-		  bs.Write( toSave )
-		  bs.Close
-		  
-		  dim tis as TextInputStream = TextInputStream.Open( f )
-		  dim compare as string = tis.ReadAll
-		  tis.Close
-		  
-		  r = StrComp( toSave, compare, 0 ) = 0
-		  self.ContentsChanged = not r
-		  
-		  if not r then
-		    MsgBox "Save failed!"
-		  end if
-		  
-		  return r
-		  
-		  Exception err as RuntimeException
+		  Exception err as IOException
 		    self.ContentsChanged = savedContentsChanged
-		    return false
+		    MsgBox "Save failed!"
 		    
 		  Finally
 		    UpdateWindowTitle
+		    return r
 		End Function
 	#tag EndMethod
 
@@ -2564,7 +2546,7 @@ End
 	#tag Method, Flags = &h21
 		Private Sub HashFromURL(url As String, version As String, hashField As TextField)
 		  url = url.Trim
-		  url = InsertVersion( url, version )
+		  url = KajuFile.InsertVersion( url, version )
 		  
 		  if url = "" then
 		    return
@@ -2600,12 +2582,6 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
-		Private Function InsertVersion(originalURL As String, version As String) As String
-		  return originalURL.ReplaceAllB( "$VERSION$", version )
-		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h21
 		Private Function IsDataValid() As Boolean
 		  StoreFieldsToVersionRow()
 		  
@@ -2618,8 +2594,7 @@ End
 		  dim msg as string
 		  dim lastRow as integer = lbVersions.ListCount - 1
 		  for row as integer = 0 to lastRow
-		    dim j as JSONItem = lbVersions.RowTag( row )
-		    dim u as new Kaju.UpdateInformation( j )
+		    dim u as Kaju.UpdateInformation = lbVersions.RowTag( row )
 		    if not u.IsValid then
 		      r = false
 		      msg = u.InvalidReason
@@ -2637,83 +2612,34 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
-		Private Sub JSONToFields(data As JSONItem)
-		  //
-		  // Handle the named controls first
-		  //
-		  
-		  dim savedDirty as boolean = self.ContentsChanged
-		  
-		  ClearFields()
-		  
-		  self.Loading = true
-		  
-		  dim lastIndex as integer = ControlCount - 1
-		  for i as integer = 0 to lastIndex
-		    dim c as Control = self.Control( i )
-		    
-		    dim fieldName as string = ControlDataField( c )
-		    if fieldName <> "" then
-		      ControlValue( c ) = data.Lookup( fieldName, nil )
-		    end if
-		    
-		  next
-		  
-		  //
-		  // Binaries
-		  //
-		  
-		  if data.HasName( Kaju.UpdateInformation.kMacBinaryName ) then
-		    cbMacBinary.Value = true
-		    dim binary as new Kaju.BinaryInformation( false, data.Value( Kaju.UpdateInformation.kMacBinaryName ) )
-		    fldMacBinaryHash.Text = binary.Hash
-		    fldMacBinaryURL.Text = binary.URL
+		Private Function MyKajuFile() As KajuFile
+		  if mMyKajuFile is nil then
+		    mMyKajuFile = new KajuFile
 		  end if
 		  
-		  if data.HasName( Kaju.UpdateInformation.kWindowsBinaryName ) then
-		    cbWindowsBinary.Value = true
-		    dim binary as new Kaju.BinaryInformation( true, data.Value( Kaju.UpdateInformation.kWindowsBinaryName ) )
-		    fldWindowsExecutable.Text = binary.ExecutableName
-		    fldWindowsBinaryHash.Text = binary.Hash
-		    fldWindowsBinaryURL.Text = binary.URL
-		  end if
-		  
-		  if data.HasName( Kaju.UpdateInformation.kLinuxBinaryName ) then
-		    cbLinuxBinary.Value = true
-		    dim binary as new Kaju.BinaryInformation( true, data.Value( Kaju.UpdateInformation.kLinuxBinaryName ) )
-		    fldLinuxExecutable.Text = binary.ExecutableName
-		    fldLinuxBinaryHash.Text = binary.Hash
-		    fldLinuxBinaryURL.Text = binary.URL
-		  end if
-		  
-		  self.Loading = false
-		  
-		  AdjustControls()
-		  self.ContentsChanged = savedDirty
-		End Sub
+		  return mMyKajuFile
+		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
 		Private Sub NewVersion()
 		  StoreFieldsToVersionRow()
 		  
-		  CreateRSAKeys()
-		  
 		  lbVersions.AddRow "1.0.0d1"
-		  
-		  dim j as new JSONItem()
-		  j.Value( "Version" ) = lbVersions.Cell( lbVersions.LastIndex, 0 )
+		  dim version as new Kaju.UpdateInformation
+		  version.Version = lbVersions.Cell( lbVersions.LastIndex, 0 )
 		  
 		  dim prevIndex as integer = LastVersionRow
 		  if prevIndex <> -1 and prevIndex < lbVersions.ListCount then
-		    dim prevItem as JSONItem = lbVersions.RowTag( prevIndex )
+		    dim prevItem as Kaju.UpdateInformation = lbVersions.RowTag( prevIndex )
 		    if prevItem <> nil then
-		      dim fieldName as string = fldAppName.DataField
-		      j.Value( fieldName ) = prevItem.Lookup( fieldName, "" )
+		      version.AppName = prevItem.AppName
 		    end if
 		  end if
 		  
-		  lbVersions.RowTag( lbVersions.LastIndex ) = j
+		  MyKajuFile.KajuData.Append version
+		  
+		  lbVersions.RowTag( lbVersions.LastIndex ) = version
 		  lbVersions.ListIndex = lbVersions.LastIndex
 		  self.ContentsChanged = true
 		End Sub
@@ -2724,24 +2650,12 @@ End
 		  if f is nil or not f.Exists or f.Directory then
 		    raise new NilObjectException
 		  end if
+		  MyKajuFile.Load f
 		  
-		  dim tis as TextInputStream = TextInputStream.Open( f )
-		  tis.Encoding = Encodings.UTF8
-		  
-		  dim dataString as string = tis.ReadAll
-		  tis = nil
-		  
-		  dataString = ReplaceLineEndings( dataString, EndOfLine )
-		  
-		  dim master as new JSONItem( dataString )
-		  RSAPrivateKey = master.Value( kPrivateKeyName )
-		  RSAPublicKey = master.Value( kPublicKeyName )
-		  
-		  dim data as JSONItem = master.Value( kDataName )
-		  dim lastIndex as integer = data.Count - 1
-		  for i as integer = 0 to lastIndex
-		    dim version as JSONItem = data( i )
-		    lbVersions.AddRow version.Value( "Version" ).StringValue
+		  dim versions() as Kaju.UpdateInformation = MyKajuFile.KajuData
+		  for i as integer = 0 to versions.Ubound
+		    dim version as Kaju.UpdateInformation = versions( i )
+		    lbVersions.AddRow version.Version
 		    lbVersions.RowTag( lbVersions.LastIndex ) = version
 		  next i
 		  
@@ -2755,10 +2669,19 @@ End
 		  AdjustControls
 		  
 		  Exception err as RuntimeException
-		    MsgBox "Could not open document."
-		    
-		    self.Close
-		    return
+		    select case err
+		    case IsA EndException, IsA ThreadEndException
+		      //
+		      // Pass it on
+		      //
+		      raise err
+		      
+		    case else
+		      MsgBox "Could not open document."
+		      
+		      self.Close
+		      return
+		    end select
 		End Sub
 	#tag EndMethod
 
@@ -2768,7 +2691,7 @@ End
 		    return
 		  end if
 		  
-		  dim j as new JSONItem( "{}" )
+		  dim version as Kaju.UpdateInformation = lbVersions.RowTag( LastVersionRow )
 		  
 		  //
 		  // Gather the textfield data first
@@ -2781,7 +2704,7 @@ End
 		    dim fieldName as string = ControlDataField( c )
 		    if fieldName <> "" then
 		      dim value as Variant = ControlValue( c )
-		      j.Value( fieldName ) = value
+		      version.SetByName( fieldName ) = value
 		    end if
 		    
 		  next
@@ -2789,13 +2712,14 @@ End
 		  //
 		  // Binaries
 		  //
-		  
 		  if cbMacBinary.Value then
 		    dim binary as new Kaju.BinaryInformation( false )
 		    binary.Hash = fldMacBinaryHash.Text.Trim
 		    binary.URL = fldMacBinaryURL.Text.Trim
 		    
-		    j.Value( Kaju.UpdateInformation.kMacBinaryName ) = binary.ToJSON
+		    version.MacBinary = binary
+		  else
+		    version.MacBinary = nil
 		  end if
 		  
 		  if cbWindowsBinary.Value then
@@ -2804,7 +2728,9 @@ End
 		    binary.Hash = fldWindowsBinaryHash.Text.Trim
 		    binary.URL = fldWindowsBinaryURL.Text.Trim
 		    
-		    j.Value( Kaju.UpdateInformation.kWindowsBinaryName ) = binary.ToJSON
+		    version.WindowsBinary = binary
+		  else
+		    version.WindowsBinary = nil
 		  end if
 		  
 		  if cbLinuxBinary.Value then
@@ -2813,10 +2739,12 @@ End
 		    binary.Hash = fldLinuxBinaryHash.Text.Trim
 		    binary.URL = fldLinuxBinaryURL.Text.Trim
 		    
-		    j.Value( Kaju.UpdateInformation.kLinuxBinaryName ) = binary.ToJSON
+		    version.LinuxBinary = binary
+		  else
+		    version.LinuxBinary = nil
 		  end if
 		  
-		  lbVersions.RowTag( LastVersionRow ) = j
+		  
 		End Sub
 	#tag EndMethod
 
@@ -2839,6 +2767,67 @@ End
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h21
+		Private Sub VersionToFields(version As Kaju.UpdateInformation)
+		  //
+		  // Handle the named controls first
+		  //
+		  
+		  dim savedDirty as boolean = self.ContentsChanged
+		  
+		  ClearFields()
+		  
+		  self.Loading = true
+		  
+		  dim lastIndex as integer = ControlCount - 1
+		  for i as integer = 0 to lastIndex
+		    dim c as Control = self.Control( i )
+		    
+		    dim fieldName as string = ControlDataField( c )
+		    if fieldName <> "" then
+		      try
+		        ControlValue( c ) = version.GetByName( fieldName )
+		      catch err as KeyNotFoundException
+		        ControlValue( c ) = nil
+		      end try
+		    end if
+		    
+		  next
+		  
+		  //
+		  // Binaries
+		  //
+		  
+		  if version.MacBinary isa Kaju.BinaryInformation then
+		    cbMacBinary.Value = true
+		    dim binary as Kaju.BinaryInformation = version.MacBinary
+		    fldMacBinaryHash.Text = binary.Hash
+		    fldMacBinaryURL.Text = binary.URL
+		  end if
+		  
+		  if version.WindowsBinary isa Kaju.BinaryInformation then
+		    cbWindowsBinary.Value = true
+		    dim binary as Kaju.BinaryInformation = version.WindowsBinary
+		    fldWindowsExecutable.Text = binary.ExecutableName
+		    fldWindowsBinaryHash.Text = binary.Hash
+		    fldWindowsBinaryURL.Text = binary.URL
+		  end if
+		  
+		  if version.LinuxBinary isa Kaju.BinaryInformation then
+		    cbLinuxBinary.Value = true
+		    dim binary as Kaju.BinaryInformation = version.LinuxBinary
+		    fldLinuxExecutable.Text = binary.ExecutableName
+		    fldLinuxBinaryHash.Text = binary.Hash
+		    fldLinuxBinaryURL.Text = binary.URL
+		  end if
+		  
+		  self.Loading = false
+		  
+		  AdjustControls()
+		  self.ContentsChanged = savedDirty
+		End Sub
+	#tag EndMethod
+
 
 	#tag ComputedProperty, Flags = &h0
 		#tag Getter
@@ -2856,29 +2845,6 @@ End
 			End Set
 		#tag EndSetter
 		Document As FolderItem
-	#tag EndComputedProperty
-
-	#tag ComputedProperty, Flags = &h21
-		#tag Getter
-			Get
-			  StoreFieldsToVersionRow()
-			  
-			  dim combined as new JSONItem( "[]" )
-			  combined.Compact = false
-			  
-			  dim lastIndex as integer = lbVersions.ListCount - 1
-			  for row as integer = 0 to lastIndex
-			    dim j as JSONItem = lbVersions.RowTag( row )
-			    if j <> nil then
-			      combined.Append j
-			    end if
-			  next
-			  
-			  return combined
-			  
-			End Get
-		#tag EndGetter
-		Private KajuJSON As JSONItem
 	#tag EndComputedProperty
 
 	#tag Property, Flags = &h21
@@ -2916,26 +2882,12 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
+		Private mMyKajuFile As KajuFile
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
 		Private Platforms() As String
 	#tag EndProperty
-
-	#tag Property, Flags = &h21
-		Private RSAPrivateKey As String
-	#tag EndProperty
-
-	#tag Property, Flags = &h21
-		Private RSAPublicKey As String
-	#tag EndProperty
-
-
-	#tag Constant, Name = kDataName, Type = String, Dynamic = False, Default = \"KajuData", Scope = Private
-	#tag EndConstant
-
-	#tag Constant, Name = kPrivateKeyName, Type = String, Dynamic = False, Default = \"PrivateKey", Scope = Private
-	#tag EndConstant
-
-	#tag Constant, Name = kPublicKeyName, Type = String, Dynamic = False, Default = \"PublicKey", Scope = Private
-	#tag EndConstant
 
 
 #tag EndWindowCode
@@ -2947,7 +2899,7 @@ End
 		  
 		  dim row as integer = me.ListIndex
 		  if row <> -1 and me.RowTag( row ) <> nil then
-		    JSONToFields( me.RowTag( row ) )
+		    VersionToFields( me.RowTag( row ) )
 		  else
 		    ClearFields
 		  end if
@@ -3218,10 +3170,9 @@ End
 #tag Events btnCopyPublicKey
 	#tag Event
 		Sub Action()
-		  CreateRSAKeys()
 		  
 		  dim c as new Clipboard
-		  c.Text = RSAPublicKey
+		  c.Text = MyKajuFile.PublicKey
 		  c.Close
 		End Sub
 	#tag EndEvent
@@ -3246,49 +3197,15 @@ End
 		  
 		  dim dlg as new SaveAsDialog
 		  dlg.PromptText = "Export the file that will be served to your app through your web site:"
-		  dlg.Filter = FileTypes1.TextHtml
 		  dlg.ActionButtonCaption = "Export"
-		  dlg.SuggestedFileName = "UpdateInformation.html"
+		  dlg.SuggestedFileName = MyKajuFile.ExportFilename
 		  
 		  dim f as FolderItem = dlg.ShowModalWithin( self )
 		  if f is nil then
 		    return
 		  end if
 		  
-		  dim data as JSONItem = KajuJSON
-		  data.Compact = false
-		  data.EscapeSlashes = false
-		  
-		  //
-		  // Perform $VERSION$ substitutions
-		  //
-		  dim keys() as string = Array( Kaju.UpdateInformation.kMacBinaryName, Kaju.UpdateInformation.kWindowsBinaryName, _
-		  Kaju.UpdateInformation.kLinuxBinaryName )
-		  
-		  dim lastVersionIndex as integer = data.Count - 1
-		  for versionIndex as integer = 0 to lastVersionIndex
-		    dim thisVersionData as JSONItem = data( versionIndex )
-		    dim thisVersion as string = thisVersionData.Value( fldVersion.DataField )
-		    for each binaryKey as string in keys
-		      if thisVersionData.HasName( binaryKey ) then
-		        dim binaryData as JSONItem = thisVersionData.Value( binaryKey )
-		        dim url as string = binaryData.Value( Kaju.BinaryInformation.kKeyURL )
-		        url = InsertVersion( url, thisVersion )
-		        binaryData.Value( Kaju.BinaryInformation.kKeyURL ) = url
-		      end if
-		    next
-		  next
-		  
-		  dim dataString as string = data.ToString
-		  
-		  dim sig as string = Crypto.RSASign( dataString, RSAPrivateKey )
-		  sig = EncodeHex( sig )
-		  
-		  dataString = Kaju.kUpdatePacketMarker + sig + EndOfLine.UNIX + dataString
-		  
-		  dim tos as TextOutputStream = TextOutputStream.Create( f )
-		  tos.Write dataString
-		  tos = nil
+		  MyKajuFile.ExportTo( f )
 		  
 		  Exception err As RuntimeException
 		    MsgBox "Could not export data."
@@ -3322,7 +3239,7 @@ End
 		  
 		  dim uc as new Kaju.UpdateChecker( App.PrefFolder )
 		  uc.AllowedStage = me.MenuValue
-		  dim s as string = KajuJSON.ToString
+		  dim s as string = MyKajuFile.DataToJSON.ToString
 		  uc.TestUpdate( s )
 		  
 		  me.MenuValue = -1
