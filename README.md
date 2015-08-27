@@ -246,7 +246,7 @@ There is also a `Kaju.Version` constant (introduced in v.1.4) that will let you 
 
 |Method|Description|
 |:-----|:---------|
-|Constructor(preferencesFolder As FolderItem)|Create the new instance around the given preferences folder|
+|Constructor(preferencesFolder As FolderItem[, preferencesFilename As String])|Create the new instance around the given preferences folder using the given name for the file if provided, or "Kaju_Preferences" if not|
 |Execute|Start the update process|
 |ResetIgnored|Reset the list of ignored updates|
 |Result As ResultType|The result of the last Execute|
@@ -277,7 +277,7 @@ This project was designed and implemented by:
 * Luke Cowgar (lcowgar at advancedpricing.com)
 * Jeremy Cowgar (jeremy at cowgar.com)
 
-With thanks to John Hansen and Paul Lefebvre.
+With thanks to John Hansen, Paul Lefebvre, and Scott Boss.
 
 Translations to other languages by:
 
@@ -285,6 +285,7 @@ Translations to other languages by:
 * Valdemar De SOUSA (French)
 * Julen Ibarretxe Uriguen (Spanish)
 * Heikki Ohvo (Finnish)
+* Manuel Romei (Italian)
 
 With special thanks to [Advanced Medical Pricing Solutions, Inc.](http://www.advancedpricing.com), for making this possible.
 
@@ -310,13 +311,13 @@ No. Thanks to John Hansen and code he provided on the [Xojo Forums](https://foru
 
 **How do I contribute?**
 
-For the appropriate branch to your GitHub account. Use "develop" for general fixes and additions and "translations" to add a language translation. Make your changes, then submit a pull request. We'll look it over and merge what's appropriate or provide feedback.
+Fork the project to your GitHub account. Use the "develop" branch for general fixes and additions and "translations" to add a language translation. Make your changes, then submit a pull request. We'll look it over and merge what's appropriate or provide feedback.
 
 **I want to submit a translation. What should be translated?**
 
 There are two places to look for strings that need translation:
 
-1. The constants in the KajuLocale module.
+1. The constants in the KajuLocale module. 
 1. The error messages in KajuException.
 
 Add a translation for each, then submit a pull request as outlined above.
@@ -383,3 +384,31 @@ Add a translation for each, then submit a pull request as outlined above.
 1.5 (June 3, 2015)
 
 - **Admin app**: Enable substitution of `$VERSION$` in binary URL's.
+
+1.5.1 (June 19, 2015)
+
+- **Admin app**: Fixed tab order of controls.
+- **Admin app**: Retinized!
+- Added what should be an unneeded, but apparently necessary, GOTO to the Windows script.
+
+1.5.2 (July 17, 2015)
+
+- Added Italian translation.
+
+1.5.3 (July 20, 2015)
+
+- **Admin app**: Split the file settings from the Admin window so a file can be manipulated independently.
+- **Admin app**: Save the last export file name to suggest it for the next export.
+
+1.6 (August 18, 2015)
+
+- Can override the preference file name when creating the UpdateChecker object.
+- Introduced command line project (CLI).
+
+1.6.1 (___, 2015)
+
+- **CLI**: Better handling of remote debugging.
+- **CLI**: listversions now has --include and --exclude switches that take regex patterns.
+- **Admin**: Prevent Save or Export if the file includes duplicate version numbers.
+- **CLI**: Disallow adding duplicate version number or changing an existing version number so it becomes a duplicate.
+- **Test App*: Created Build Script to automatically update the Kaju files after building.

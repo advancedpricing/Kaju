@@ -66,12 +66,34 @@ Inherits Kaju.Information
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Function GetByName(propName As String) As Variant
+		  dim prop as Introspection.PropertyInfo = PropInfoDictionary.Value( propName )
+		  return prop.Value( self )
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub SetByName(propName As String, Assigns value As Variant)
+		  dim prop as Introspection.PropertyInfo = PropInfoDictionary.Value( propName )
+		  
+		  //
+		  // Special case when the value is set to "yes"
+		  //
+		  if value.Type = Variant.TypeString and value.StringValue = "yes" and prop.PropertyType.Name = "Boolean" then
+		    value = true
+		  end if
+		  
+		  prop.Value( self ) = value
+		End Sub
+	#tag EndMethod
+
 
 	#tag Property, Flags = &h0
 		AppName As String
 	#tag EndProperty
 
-	#tag ComputedProperty, Flags = &h0
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetHasGUI)
 		#tag Getter
 			Get
 			  if mImage <> nil then
@@ -149,6 +171,26 @@ Inherits Kaju.Information
 		PlatformBinary As Kaju.BinaryInformation
 	#tag EndComputedProperty
 
+	#tag ComputedProperty, Flags = &h21
+		#tag Getter
+			Get
+			  static dict as Dictionary
+			  if dict is nil then
+			    dict = new Dictionary
+			    dim ti as Introspection.TypeInfo = GetTypeInfo( Kaju.UpdateInformation )
+			    dim props() as Introspection.PropertyInfo = ti.GetProperties
+			    for each prop as Introspection.PropertyInfo in props
+			      dict.Value( prop.Name ) = prop
+			    next
+			  end if
+			  
+			  return dict
+			  
+			End Get
+		#tag EndGetter
+		Private Shared PropInfoDictionary As Dictionary
+	#tag EndComputedProperty
+
 	#tag Property, Flags = &h0
 		ReleaseNotes As String
 	#tag EndProperty
@@ -157,7 +199,7 @@ Inherits Kaju.Information
 		RequiresPayment As Boolean
 	#tag EndProperty
 
-	#tag ComputedProperty, Flags = &h0
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetHasGUI)
 		#tag Getter
 			Get
 			  static rx as RegEx
@@ -186,6 +228,56 @@ Inherits Kaju.Information
 			End Get
 		#tag EndGetter
 		StageCode As Integer
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0
+		#tag Getter
+			Get
+			  dim j as new JSONItem( "{}" )
+			  
+			  dim props() as Introspection.PropertyInfo = Introspection.GetType( self ).GetProperties
+			  for each prop as Introspection.PropertyInfo in props
+			    if prop.IsComputed or not prop.CanRead or not prop.CanWrite or not prop.IsPublic then
+			      continue for prop
+			    end if
+			    
+			    dim propType as Introspection.TypeInfo = prop.PropertyType
+			    dim propTypeName as string = propType.Name
+			    dim isGood as boolean
+			    select case propTypeName
+			    case "String", "Double", "Single", "Text", "Boolean"
+			      isGood = true
+			      
+			    end select
+			    
+			    if not isGood then
+			      //
+			      // See if it's an integer of some sort
+			      //
+			      if propTypeName.Left( 3 ) = "Int" or propTypeName.Left( 4 ) = "UInt" then
+			        isGood = true
+			      end if
+			    end if
+			    
+			    if isGood then
+			      j.Value( prop.Name ) = prop.Value( self )
+			    end if
+			  next
+			  
+			  if MacBinary Isa Kaju.BinaryInformation then
+			    j.Value( kMacBinaryName ) = MacBinary.ToJSON
+			  end if
+			  if WindowsBinary Isa Kaju.BinaryInformation then
+			    j.Value( kWindowsBinaryName ) = WindowsBinary.ToJSON
+			  end if
+			  if LinuxBinary Isa Kaju.BinaryInformation then
+			    j.Value( kLinuxBinaryName ) = LinuxBinary.ToJSON
+			  end if
+			  
+			  return j
+			End Get
+		#tag EndGetter
+		ToJSON As JSONItem
 	#tag EndComputedProperty
 
 	#tag Property, Flags = &h0
